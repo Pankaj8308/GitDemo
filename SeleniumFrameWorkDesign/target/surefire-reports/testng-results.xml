@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="7" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-22T12:34:44 IST" name="Suite" finished-at="2024-02-22T12:35:21 IST" duration-ms="36580">
+    <groups>
+      <group name="purchase">
+        <method signature="UserSubmitOrder.submitOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" name="submitOrder" class="MavenPracticeProject.UserSubmitOrder"/>
+        <method signature="UserSubmitOrder.VerifyOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" name="VerifyOrder" class="MavenPracticeProject.UserSubmitOrder"/>
+      </group> <!-- purchase -->
+      <group name="errorVal">
+        <method signature="ErrorValidation.errorv()[pri:0, instance:MavenPracticeProject.ErrorValidation@42721fe]" name="errorv" class="MavenPracticeProject.ErrorValidation"/>
+      </group> <!-- errorVal -->
+    </groups>
+    <test started-at="2024-02-22T12:34:44 IST" name="NegativeValidation" finished-at="2024-02-22T12:34:49 IST" duration-ms="4566">
+      <class name="MavenPracticeProject.ErrorValidation">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:MavenPracticeProject.ErrorValidation@42721fe]" started-at="2024-02-22T12:34:44 IST" name="launchApp" finished-at="2024-02-22T12:34:48 IST" duration-ms="3617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="errorv()[pri:0, instance:MavenPracticeProject.ErrorValidation@42721fe]" started-at="2024-02-22T12:34:48 IST" name="errorv" finished-at="2024-02-22T12:34:48 IST" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorv -->
+        <test-method is-config="true" signature="closeBr()[pri:0, instance:MavenPracticeProject.ErrorValidation@42721fe]" started-at="2024-02-22T12:34:48 IST" name="closeBr" finished-at="2024-02-22T12:34:49 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBr -->
+      </class> <!-- MavenPracticeProject.ErrorValidation -->
+    </test> <!-- NegativeValidation -->
+    <test started-at="2024-02-22T12:34:44 IST" name="Login and Submit" finished-at="2024-02-22T12:35:21 IST" duration-ms="36580">
+      <class name="MavenPracticeProject.UserSubmitOrder">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:44 IST" name="launchApp" finished-at="2024-02-22T12:34:48 IST" duration-ms="3878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:48 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-22T12:34:52 IST" duration-ms="3599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwerty@123, product=ADIDAS, email=Pankajkumartiwari8308@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBr()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:52 IST" name="closeBr" finished-at="2024-02-22T12:34:52 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBr -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:52 IST" name="launchApp" finished-at="2024-02-22T12:34:54 IST" duration-ms="2235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method retried="true" signature="submitOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:54 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-22T12:34:56 IST" duration-ms="1968" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwerty@123, product=ZARA, email=PKT@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-rpn-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1280, 27). Other element would receive the click: <div _ngcontent-rpn-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=121.0.6167.185)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52e88b714c5a8d81e8fa02afcb2ecd43, clickElement {id=E2EE75C4005807F75288AE8405919990_element_82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\panka\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50637/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (52e88b714c5a8d81e8fa02afcb2ecd43)] -> css selector: button[routerlink='/dashboard/cart']]
+Session ID: 52e88b714c5a8d81e8fa02afcb2ecd43]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-rpn-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1280, 27). Other element would receive the click: <div _ngcontent-rpn-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=121.0.6167.185)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52e88b714c5a8d81e8fa02afcb2ecd43, clickElement {id=E2EE75C4005807F75288AE8405919990_element_82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\panka\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50637/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (52e88b714c5a8d81e8fa02afcb2ecd43)] -> css selector: button[routerlink='/dashboard/cart']]
+Session ID: 52e88b714c5a8d81e8fa02afcb2ecd43
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at AbstractComp.AbstractComponent.addCartclick(AbstractComponent.java:57)
+at MavenPracticeProject.UserSubmitOrder.submitOrder(UserSubmitOrder.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBr()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:56 IST" name="closeBr" finished-at="2024-02-22T12:34:56 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBr -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:56 IST" name="launchApp" finished-at="2024-02-22T12:34:59 IST" duration-ms="2386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:34:59 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-22T12:35:13 IST" duration-ms="14582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwerty@123, product=ZARA, email=PKT@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBr()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:13 IST" name="closeBr" finished-at="2024-02-22T12:35:13 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBr -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:13 IST" name="launchApp" finished-at="2024-02-22T12:35:16 IST" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="VerifyOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:16 IST" name="VerifyOrder" data-provider="getData" finished-at="2024-02-22T12:35:17 IST" depends-on-methods="MavenPracticeProject.UserSubmitOrder.submitOrder" duration-ms="894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwerty@123, product=ADIDAS, email=Pankajkumartiwari8308@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOrder -->
+        <test-method is-config="true" signature="closeBr()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:17 IST" name="closeBr" finished-at="2024-02-22T12:35:17 IST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBr -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:17 IST" name="launchApp" finished-at="2024-02-22T12:35:20 IST" duration-ms="2982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="VerifyOrder(java.util.HashMap)[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:20 IST" name="VerifyOrder" data-provider="getData" finished-at="2024-02-22T12:35:20 IST" depends-on-methods="MavenPracticeProject.UserSubmitOrder.submitOrder" duration-ms="903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Qwerty@123, product=ZARA, email=PKT@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOrder -->
+        <test-method is-config="true" signature="closeBr()[pri:0, instance:MavenPracticeProject.UserSubmitOrder@130dca52]" started-at="2024-02-22T12:35:20 IST" name="closeBr" finished-at="2024-02-22T12:35:21 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBr -->
+      </class> <!-- MavenPracticeProject.UserSubmitOrder -->
+    </test> <!-- Login and Submit -->
+  </suite> <!-- Suite -->
+</testng-results>
