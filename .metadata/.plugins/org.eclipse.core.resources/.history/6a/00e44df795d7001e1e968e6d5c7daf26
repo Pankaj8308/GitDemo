@@ -1,0 +1,25 @@
+package P1;
+import java.time.Duration;
+import java.util.List;
+import java.util.Optional;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+public class PracticeStreams {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get("https://www.flipkart.com/");
+		driver.findElement(By.className("Pke_EE")).sendKeys("iPhone"+Keys.ENTER);
+		List<WebElement> prd = driver.findElements(By.xpath("//div[@class='_4rR01T']"));
+		WebElement prod=prd.stream().filter(s->s.getText().contains("128")).findFirst().orElse(null);
+		prod.click();
+		
+		
+		
+
+	}
+
+}

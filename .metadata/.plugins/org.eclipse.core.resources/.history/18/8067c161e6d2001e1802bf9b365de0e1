@@ -1,0 +1,22 @@
+package POM2.Testproj2;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+
+public class Base {
+	public WebDriver driver;
+	public void initDriver() throws IOException
+	{
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\Data\\Global Data");
+		prop.load(fis);
+		String br = prop.getProperty("browser");
+		if(br.contains("chrome"))
+		{
+			WebDriver driver = new ChromeDriver();
+		}
+	}
+
+}

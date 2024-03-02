@@ -1,0 +1,19 @@
+package POM2.Testproj2;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Base {
+	public void initDriver() throws IOException
+	{
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\Data\\Global Data");
+		prop.load(fis);
+		String br = prop.getProperty("browser");
+		}
+	}
+
+}

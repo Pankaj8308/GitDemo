@@ -1,0 +1,10 @@
+package POM2.Testproj2;
+
+public class Base {
+	
+	public void initDriver()
+	{
+		
+	}
+
+}

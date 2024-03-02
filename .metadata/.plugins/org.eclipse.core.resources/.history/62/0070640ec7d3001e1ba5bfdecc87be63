@@ -1,0 +1,33 @@
+package POM2.Testproj2;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import Data.InputReader;
+import TestComp.Base;
+
+public class Registration extends Base{
+	
+	@Test
+	public void RegisterUser(WebDriver driver, String name, String email)
+	{
+		SignUp up =lp.clikCart();
+		up.signUpDetail(driver, name, email);
+	
+	}
+	
+	@DataProvider()
+	public Object[] getDa()
+	{
+		InputReader ir = new InputReader();
+		List<HashMap<String, String>> data = getJsonData(System.getProperty("user.dir")+"\\src\\test\\java\\Data\\Inputs");
+		return new Object[][]{{data.get(0)},{data.get(1)}};
+	}
+
+	}
+

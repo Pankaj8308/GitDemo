@@ -1,0 +1,15 @@
+package POM2.Testproj2;
+
+import org.testng.annotations.Test;
+
+import TestComp.Base;
+
+public class Registration extends Base{
+	
+	@Test
+	public void RegisterUser()
+	{
+	lp.clikCart();
+	}
+
+}

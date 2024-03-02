@@ -1,0 +1,17 @@
+package POM2.Testproj2;
+
+import org.testng.annotations.Test;
+
+import TestComp.Base;
+
+public class Registration extends Base{
+	
+	@Test
+	public void RegisterUser()
+	{
+		SignUp up =lp.clikCart(HashMap<String, String> input);
+		up.signUpDetail(driver, String input.email, null);
+	
+	}
+
+}

@@ -1,0 +1,29 @@
+package POM2.Testproj2;
+
+import java.util.HashMap;
+import java.util.List;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import TestComp.Base;
+
+public class Registration extends Base{
+	
+	@Test
+	public void RegisterUser()
+	{
+		SignUp up =lp.clikCart();
+		up.signUpDetail();
+	
+	}
+	
+	@DataProvider()
+	public void getData()
+	{
+		List<HashMap<String, String>> data = getJsonData(System.getProperty("user.dir")+"\\src\\test\\java\\Data\\Inputs");
+	}
+
+	}
+
+}

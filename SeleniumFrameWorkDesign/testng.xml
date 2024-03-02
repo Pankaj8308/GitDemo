@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel = "tests" name="Suite">
+  <test thread-count="5" name="Login and Submit">
+    <classes>
+      <class name="MavenPracticeProject.UserSubmitOrder"/>
+    </classes>
+  </test> <!-- FirstModule -->
+  <test thread-count="5" name="NegativeValidation">
+    <classes>
+      <class name="MavenPracticeProject.ErrorValidation"/>
+    </classes>
+    </test> <!-- FirstModule -->
+</suite> <!-- Suite -->

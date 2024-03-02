@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-02T16:00:26 IST" name="Default suite" finished-at="2024-03-02T16:00:40 IST" duration-ms="13982">
+    <groups>
+    </groups>
+    <test started-at="2024-03-02T16:00:26 IST" name="Default test" finished-at="2024-03-02T16:00:40 IST" duration-ms="13982">
+      <class name="P1.PracticeStreams">
+        <test-method signature="InValidEmail()[pri:0, instance:P1.PracticeStreams@1b11171f]" started-at="2024-03-02T16:00:26 IST" name="InValidEmail" finished-at="2024-03-02T16:00:40 IST" duration-ms="13923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidEmail -->
+      </class> <!-- P1.PracticeStreams -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
